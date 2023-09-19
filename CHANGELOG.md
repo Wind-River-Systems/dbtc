@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.6.0] - 2023-09-02
+
+### Updated
+- Typer version to `0.9.0`
+
+## [0.5.3] - 2023-08-09
+- Remove read-only field `job_type` from job payload before cloning job
+
+## [0.5.2] - 2023-07-30
+
+### Fixed
+- Method used in the `update_environment_variables` method call from `POST` to `PUT`
+
+## [0.5.1] - 2023-07-30
+
+### Added
+- Methods to update and list environment variables
+
+## [0.5.0] - 2023-07-28
+
+### Fixed
+- `trigger_job_from_failure` method encountering an `IndexError` when called for the first run of the job
+- `assign_user_to_group` method now accepts a `project_id` argument
+- `delete_user_group` method now accepts a `payload` argument
+
 ## [0.4.2] - 2023-04-03
 
 ### Fixed
